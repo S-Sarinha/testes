@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MUDAR A COR</title>
+        <link rel="stylesheet" typ="text/css" href="style.css">
+    </head>
+    <body>
+        <p>Para mudar o background:</p>
+        <button>CLIQUE-ME</button>
+        <script type="text/javascript">
+             var color = [
+                 
+             "#0B3B24", 
+             "#0B615E",
+             "#298A08",
+             "#DF0101",
+             "#000000",
+             "#A9A9F5",
+             "#A9F5D0",
+             "#00d4ff",
+            ]
+            var i = 0;
+            document.querySelector("button").addEventListener("click" , function(){
+                i = i < color.length ? ++i: 0;
+            document.querySelector("body").style.background = color[i]
+
+            })
+        </script>
+    </body>
+</html>
